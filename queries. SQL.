@@ -1,5 +1,5 @@
 --View first 10 rows of the dataset
-SELECT*FROM healthcare_dataset LIMIT 10;
+SELECT TOP 10 * FROM healthcare_dataset;
 --Count the number of records in the dataset 
 SELECT COUNT (*)FROM healthcare_dataset;
 -- Find distinct values in a specific column (replace 'column_name' with an actual column name)
