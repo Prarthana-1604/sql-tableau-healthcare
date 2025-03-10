@@ -1,0 +1,2 @@
+--View first 10 rows of the dataset
+SELECT*FROM healthcare_dataset LIMIT 10;
