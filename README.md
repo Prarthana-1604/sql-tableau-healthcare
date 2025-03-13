@@ -19,8 +19,8 @@ This project analyzes a healthcare dataset to find insights on patient admission
   
    - ## 📂 Key Files & Where to Find Queries  
 - `healthcare_data_analysis.sql` → **Main SQL code file**  
-- CSV files → Query results
-
+- CSV files → queries_healthcare_datasets
+  
 - ## 🚀 Next Steps  
 - Visualizing insights using Tableau  
 - Expanding analysis using R  
