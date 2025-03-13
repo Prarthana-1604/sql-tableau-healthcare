@@ -87,3 +87,17 @@ SELECT Name, Hospital, DATEDIFF(DAY, Date_of_Admission, Discharge_Date) AS Stay_
 FROM healthcare_dataset
 WHERE DATEDIFF(DAY, Date_of_Admission, Discharge_Date) > 10
 ORDER BY Stay_Duration DESC;
+
+--Finding Hospital with more than 30 Patients
+SELECT Hospital, COUNT(*) AS Patient_Count
+FROM dbo.healthcare_dataset
+GROUP BY Hospital
+HAVING COUNT(*) > 30
+ORDER BY Patient_Count DESC;
+
+--Finding Diagnosis with more than 20 cases 
+SELECT Medical_Condition, COUNT(*) AS Diagnosis_Count
+FROM healthcare_dataset
+GROUP BY Medical_Condition
+HAVING COUNT(*) > 20
+ORDER BY Diagnosis_Count DESC; 
